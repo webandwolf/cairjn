@@ -89,13 +89,13 @@ svg {
 /* Bottle Showcase */
 
 .bottle-showcase {
- margin-top: -150vh; 
+ position: relative;
 }
 
 .bottles {
     z-index: 2;
-    position: relative;
-    top: 80vh;
+    position: absolute;
+    top: -5em;
 }
 
 .bottles img {
@@ -109,6 +109,7 @@ svg {
     background-size: cover;
     background-position: center;
     margin: auto;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    top: 0;
 }
