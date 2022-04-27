@@ -3,11 +3,18 @@ html {
     background-color: #DEDAD3;
 }
 
+body {
+    margin: 0 5em;
+}
+
+/* Fonts */
+
 @font-face {
     font-family: 'Gopher-Bold';
     src: url('assets/fonts/Gopher-Bold.otf')  format('opentype');
   }
 
+  /* Hero */
 
 .left-hero {
     overflow: visible;
@@ -30,9 +37,6 @@ html {
 
 svg {
     overflow: visible;
-}
-
-.main-hero {
 }
 
 .coloured-box-1 {
@@ -80,4 +84,32 @@ svg {
     width: 6.5rem;
     height: 30rem;
     position: relative;
+}
+
+/* Bottle Showcase */
+
+.bottle-showcase {
+
+}
+
+.bottles {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.bottles img {
+    width: 100%;
+}
+
+.bottle-bg {
+    width: 80%;
+    height: 70vh;
+    background-image: url('assets/img/cairjn-multiple-bottle-bg-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    z-index: 1;
 }
