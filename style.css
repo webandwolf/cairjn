@@ -93,9 +93,9 @@ svg {
 }
 
 .bottles {
-    position: absolute;
-    top: 0;
     z-index: 2;
+    position: relative;
+    top: 80vh;
 }
 
 .bottles img {
@@ -108,8 +108,7 @@ svg {
     background-image: url('assets/img/cairjn-multiple-bottle-bg-desktop.jpg');
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 0;
     margin: auto;
+    position: relative;
     z-index: 1;
 }
