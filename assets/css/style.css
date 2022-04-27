@@ -12,7 +12,7 @@ body {
 @font-face {
     font-family: 'Gopher-Bold';
     src: url('assets/fonts/Gopher-Bold.otf')  format('opentype');
-  }
+}
 
   /* Hero */
 
@@ -112,9 +112,4 @@ svg {
     z-index: 1;
     top: 0;
     margin: 0 10%;
-}
-
-.filler {
-    width: 100vh;
-    height: 1000px;
 }

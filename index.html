@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cairjn Vineyards</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cairjn Vineyards</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <main>
-        <!-- HERO -->
-        <section>
-            <div class="hero">
-                <div class="main-hero">
-                    <div class="coloured-box-1"></div>
-                    <div class="hero-image"></div>
-                    <div class="hero-cairjn-logo">
-                        <img src="assets/img/cairjn-logo.svg" alt="">
+  <main>
+    <section>
+        <div class="hero">
+            <div class="main-hero">
+            <div class="main-hero-content">
+                <div class="hero-content-top">
+                <div class="hero-text">
+                    <div class="hero-text-line-1">
+                    <svg viewBox="0 0 100 100">
+                        <path fill="transparent" id="hero-text-line-1" d="M109.295,0C109.295,0 35.814,26.457 14.549,89.221C-6.715,151.986 -9.122,229.438 40.685,383.591C90.493,537.743 87.69,664.264 62.607,789.273" />
+                        <text width="300">
+                        <textPath xlink:href="#hero-text-line-1">
+                            Winemaking happens in the vineyard
+                        </textPath>
+                        </text>
+                    </svg>
                     </div>
-                    <div class="hero-text">
-                        <div class="hero-text-line-1">
-                            <svg viewBox="0 0 100 100">
-                                <path fill="transparent" id="hero-text-line-1"  d="M109.295,0C109.295,0 35.814,26.457 14.549,89.221C-6.715,151.986 -9.122,229.438 40.685,383.591C90.493,537.743 87.69,664.264 62.607,789.273" />
-                                <text width="300">
-                                    <textPath xlink:href="#hero-text-line-1">
-                                        Winemaking happens in the vineyard
-                                    </textPath>
-                                </text>
-                            </svg>
-                        </div>
-                        <div class="hero-text-line-2">
-                            <svg viewBox="0 0 100 100">
-                                <path fill="transparent" id="hero-text-line-2"  d="M117.358,-0.299C117.358,-0.299 47.683,12.764 18.93,67.108C-9.823,121.453 -2.598,175.085 13.048,234.649C28.694,294.213 54.589,386.086 61.995,435.567C69.4,485.048 75.956,572.169 70.099,626.628" />
-                                <text width="200">
-                                    <textPath xlink:href="#hero-text-line-2">
-                                        Everything else is secondary
-                                    </textPath>
-                                </text>
-                            </svg>
-                        </div>
+                    <div class="hero-text-line-2">
+                    <svg viewBox="0 0 100 100">
+                        <path fill="transparent" id="hero-text-line-2" d="M117.358,-0.299C117.358,-0.299 47.683,12.764 18.93,67.108C-9.823,121.453 -2.598,175.085 13.048,234.649C28.694,294.213 54.589,386.086 61.995,435.567C69.4,485.048 75.956,572.169 70.099,626.628" />
+                        <text width="200">
+                        <textPath xlink:href="#hero-text-line-2">
+                            Everything else is secondary
+                        </textPath>
+                        </text>
+                    </svg>
                     </div>
                 </div>
-                <div class="left-hero">
-                    <div class="semi-circle-text">
-                        <svg viewBox="0 0 50 50">
-                            <path fill="transparent" id="left-hero-arch"  d=" m 20 60 a 5 5 0 0 1 60 0" />
-                            <text width="1000">
-                                <textPath xlink:href="#left-hero-arch" startOffset="12%">
-                                    Paso
-                                </textPath>
-                            </text>
-                        </svg>
-                    </div>
-                    <p>Robles</p>
+                <div class="image-pair-wrapper">
+                    <!-- note for Bec, delete when read :) background images are inline bc that way in the maybe future they can be easily set by a CMS -->
+                    <div class="coloured-box-1" style="background-image: url('assets/img/coloured-image-1.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('assets/img/cairjn-hero-image.jpg');"></div>
+                </div>
+                </div>
+                <div class="hero-cairjn-logo">
+                <img src="assets/img/cairjn-logo.svg" alt=" ">
                 </div>
             </div>
-        </section>
+            </div>
+            <div class="break"></div><!-- note for Bec, this empty div forces a linebreak between flex components, see: https://tobiasahlin.com/blog/flexbox-break-to-new-row/ -->
+            <div class="left-hero">
+            <div class="semi-circle-text">
+                <svg viewBox="0 0 50 50">
+                <path fill="transparent" id="left-hero-arch"  d=" m 20 60 a 5 5 0 0 1 60 0" />
+                <text width="1000">
+                    <textPath xlink:href="#left-hero-arch" startOffset="12%">
+                    Paso
+                    </textPath>
+                </text>
+                </svg>
+            </div>
+            <p>Robles</p>
+            </div>
+        </div>
+    </section>
         <!-- WINE BOTTLE PARALLAX -->
         <section>
             <div class="bottle-showcase">
@@ -67,7 +73,6 @@
                 </div>
             </div>
         </section>
-        <section class="filler"></section>
     </main>
     <footer>
     
