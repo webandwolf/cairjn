@@ -118,10 +118,14 @@ html {
 .hero-content-top {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .main-hero-content {
   width: 100vw;
+  position: relative;
+  justify-content: center;
+  display: flex;
 }
 
 .left-hero {
@@ -132,6 +136,7 @@ html {
   letter-spacing: .15rem;
   width: 3.5rem;
   height: 3rem;
+  align-self: left !important;
 }
 
 .semi-circle-text {
@@ -152,11 +157,16 @@ svg {
   height: 0;
 }
 
+.image-pair-wrapper {
+  position: relative;
+}
+
 .coloured-box-1 {
   background-size: cover;
   width: 40vw;
   height: 30vw;
   position: relative;
+  z-index: 1;
 }
 
 .hero-image {
@@ -164,14 +174,24 @@ svg {
   background-position: right;
   width: 30vw;
   height: 40vw;
-  position: relative;
+  position: absolute;
+  z-index: 2;
+  top: 5em;
+  margin-left: 20em;
 }
 
 .hero-cairjn-logo {
   width: 20vw;
   max-width: 22rem;
   min-width: 10rem;
-  position: relative;
+  position: absolute;
+  z-index: 3;
+  transform: translateX(-5vw) translateY(35vw);
+}
+
+.hero-text {
+  position: absolute;
+  transform: translateX(-25em) translateY(18em);
 }
 
 .hero-text-line-1 {
@@ -196,4 +216,57 @@ svg {
   width: 6.5rem;
   height: 30rem;
   position: relative;
+}
+
+/* Bottle Showcase */
+
+.bottle-showcase {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottles {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+.bottles img {
+    width: 100%;
+}
+
+.bottle-bg {
+    width: 80%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    top: 10em;
+    margin: 0 10%;
+}
+
+@media screen and (min-width: 600px) {
+  .bottle-bg {
+    height: 50vh;
+    top: 7em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bottle-bg {
+    height: 70vh;
+    top: 12em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .bottle-bg {
+    height: 100vh;
+    top: 12em;
+  }
 }
