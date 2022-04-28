@@ -149,7 +149,6 @@ html {
   letter-spacing: .15rem;
   width: 3.5rem;
   height: 3rem;
-  /*align-self: left;*/
   margin: 18em 0 0 1em;
   transform: scale(.8);
 }
@@ -283,7 +282,13 @@ svg {
 
 @media screen and (min-width: 450px) {
   .hero-text {
-    transform: translateX(-15em) translateY(5em) scale(.8);
+    transform: translateX(-10em) translateY(5em) scale(.8);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero-text {
+    transform: translateX(-15em) translateY(12em) scale(.8);
   }
 }
 
@@ -339,11 +344,42 @@ svg {
 
 .bottle-showcase {
   position: relative;
-  min-height: 100vh;
+  height: auto;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 6450px) {
+  .bottle-showcase {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bottle-showcase {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .bottle-showcase {
+    min-height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bottle-showcase {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .bottle-showcase {
+    min-height: 130vh;
+  }
 }
 
 .bottles {
@@ -357,17 +393,26 @@ svg {
 }
 
 .bottle-bg-desktop {
-    width: 80%;
-    height: 50vh;
+    width: 90%;
+    height: 40vh;
     background-size: cover;
     background-position: center;
     position: absolute;
     z-index: 1;
-    top: 10em;
-    margin: 0 10%;
+    top: 4em;
+    margin: 0 5%;
 }
 
 @media screen and (min-width: 600px) {
+  .bottle-bg-desktop {
+    width: 80%;
+    height: 40vh;
+    top: 6em;
+    margin: 0 10%;
+  }
+}
+
+@media screen and (min-width: 700px) {
   .bottle-bg-desktop {
     height: 50vh;
     top: 7em;
@@ -417,5 +462,188 @@ svg {
 @media screen and (min-width: 450px) {
   .bs-mobile {
     display: none;
+  }
+}
+
+/* First About Block */
+
+.about-text {
+  position: absolute;
+  z-index: 3;
+  overflow: visible;
+  width: 6.5rem;
+  height: 30rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .4rem;
+  transform: translateX(3em) translateY(42em) scale(.8);
+}
+
+@media screen and (min-width: 450px) {
+  .about-text {
+    transform: translateX(-5em) translateY(35em) scale(.8);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-text {
+    transform: translateX(-10em) translateY(40em) scale(.8);
+  }
+}
+
+
+@media screen and (min-width: 1150px) {
+  .about-text {
+    transform: translateX(-10em) translateY(45em) scale(1);
+  }
+}
+
+.first-about-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first-about-block-content {
+  margin: 0;
+  position: relative;
+}
+
+@media screen and (min-width: 450px) {
+  .first-about-block-content {
+    margin: 0 0 0 10vw;
+  }
+}
+
+.first-about-block-p {
+  width: 100vw;
+  font-size: 1.1rem;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .1rem;
+  margin: 10vh 0;
+}
+
+@media screen and (min-width: 450px) {
+  .first-about-block-p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .first-about-block-p {
+    width: 30vw;
+  }
+}
+
+.first-about-block-p p {
+  margin: 0 1.5em;
+}
+
+@media screen and (min-width: 450px) {
+  .first-about-block-p p {
+    margin: 0;
+  }
+}
+
+.image-about-image-wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+
+@media screen and (min-width: 450px) {
+  .image-about-image-wrapper {
+    display: block;
+  }
+}
+
+.image-about-image-wrapper img {
+  width: 80vw;
+  z-index: 2;
+  right: 0;
+  position: relative;
+}
+
+@media screen and (min-width: 450px) {
+  .image-about-image-wrapper img {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .image-about-image-wrapper img {
+    width: 30vw;
+  }
+}
+
+.coloured-box-2 {
+  background-size: cover;
+  width: 70vw;
+  height: 70vw;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-10em);
+  right: 0;
+}
+
+@media screen and (min-width: 450px) {
+  .coloured-box-2 {
+    width: 45vw;
+    height: 40vw;
+    z-index: -1;
+    transform: translateX(5em) translateY(-12em);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .coloured-box-2 {
+    width: 45vw;
+    height: 40vw;
+    transform: translateX(5em) translateY(-18em);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .coloured-box-2 {
+    width: 45vw;
+    height: 40vw;
+    transform: translateX(5em) translateY(-22em);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .coloured-box-2 {
+    width: 35vw;
+    height: 30vw;
+  }
+}
+
+/* Second About Block */
+
+.second-about-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10em;
+  }
+
+
+.second-about-block p {
+  font-size: 1.1rem;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .1rem;
+  margin: 2em 1.5em;
+}
+
+@media screen and (min-width: 700px) {
+  .second-about-block p {
+    width: 40vw;
+    transform: translateX(-10em);
+    margin: 2em 0;
   }
 }
