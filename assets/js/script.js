@@ -72,3 +72,11 @@ window.addEventListener('scroll', function () {
 
     element.style.transform = 'translateY(' + scrollPosition * .05 + 'px)';
 });
+
+// Input
+window.addEventListener('scroll', function () {
+    const element = document.querySelector('.input-container-parallax');
+    let scrollPosition = window.pageYOffset;
+
+    element.style.transform = 'translateY(' + scrollPosition * .05 + 'px)';
+});

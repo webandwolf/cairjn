@@ -703,6 +703,7 @@ input[type="submit"]:hover {
 .input-container {
   display: block;
   margin-bottom: 5em;
+  transform: translateY(-10em);
 }
 
 .social-buttons {
