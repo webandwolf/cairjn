@@ -1,115 +1,746 @@
-html {
-    font-size: 100%;
-    background-color: #DEDAD3;
+/* -------------------
+Font(s)
+---------------------- */
+
+@font-face {
+  font-family: 'Gopher-Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: url('../../assets/fonts/gopher-bold.woff2') format('woff2'),
+     url('../../assets/fonts/gopher-bold.woff') format('woff'),
+     url('../../assets/fonts/gopher-bold.ttf') format('truetype');
+}
+
+/* -------------------
+CSS Reset
+---------------------- */
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 body {
-    margin: 0 5em;
+  width: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-overflow-style: scrollbar;
 }
 
-/* Fonts */
-
-@font-face {
-    font-family: 'Gopher-Bold';
-    src: url('assets/fonts/Gopher-Bold.otf')  format('opentype');
+ol, ul {
+  list-style: none;
 }
 
-  /* Hero */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+/* -------------------
+Styling
+---------------------- */
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  background-color: #DEDAD3;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.hero:last-child {
+  display: inline;
+}
+
+.main-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+
+.hero-content-top {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.main-hero-content {
+  width: 100vw;
+  position: relative;
+  justify-content: right;
+  display: flex;
+}
+
+@media screen and (min-width: 450px) {
+  .main-hero-content {
+    justify-content: center;
+  }
+}
 
 .left-hero {
-    overflow: visible;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-family: 'Gopher-Bold';
-    letter-spacing: .15rem;
-    width: 3.5rem;
-    height: 3rem;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .15rem;
+  width: 3.5rem;
+  height: 3rem;
+  margin: 18em 0 0 1em;
+  transform: scale(.8);
+}
+
+@media screen and (min-width: 450px) {
+  .left-hero {
+    margin: 50vh 0 0 1em;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .left-hero {
+    transform: scale(1);
+  }
 }
 
 .semi-circle-text {
-    margin-left: .4rem;
+  margin-left: .4rem;
 }
 
 .left-hero p {
-    margin: 0;
-    letter-spacing: .3rem;
+  margin: 0;
+  letter-spacing: .3rem;
 }
 
 svg {
-    overflow: visible;
+  overflow: visible;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.image-pair-wrapper {
+  position: relative;
+  display: flex;
+  justify-items: right;
 }
 
 .coloured-box-1 {
-    background-image: url('assets/img/coloured-image-1.jpg');
-    background-size: cover;
+  background-size: cover;
+  width: 85vw;
+  height: 20em;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 450px) {
+  .coloured-box-1 {
+    width: 50vw;
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .coloured-box-1 {
     width: 40vw;
     height: 30vw;
-    position: relative;
-    margin: 5em auto 0;
-    
+  }
 }
 
 .hero-image {
-    background-image: url('assets/img/cairjn-hero-image.jpg');
-    background-size: cover;
-    background-position: right;
+  background-size: cover;
+  background-position: right;
+  width: 15em;
+  height: 30em;
+  position: absolute;
+  z-index: 2;
+  top: 10em;
+  right: 0;
+}
+
+@media screen and (min-width: 450px) {
+  .hero-image {
+    margin-left: 15em;
+    width: 40vw;
+    height: 50vw;
+    top: 5em;
+    right: -10em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero-image  {
     width: 30vw;
     height: 40vw;
-    position: relative;
-    float: right;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .hero-image {
+  }
 }
 
 .hero-cairjn-logo {
-    width: 20em;
-    position: relative;
+  width: 20em;
+  max-width: 22rem;
+  min-width: 10rem;
+  position: absolute;
+  z-index: 3;
+  transform: translateX(-10vw) translateY(65vh);
+}
+
+@media screen and (min-width: 450px) {
+  .hero-cairjn-logo {
+    width: 15em;
+    transform: translateX(-5vw) translateY(45vw);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-cairjn-logo {
+    width: 25vw;
+    transform: translateX(-9vw) translateY(45vw);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero-cairjn-logo {
+    width: 20vw;
+    transform: translateX(-5vw) translateY(35vw);
+  }
+}
+
+.hero-text {
+  position: absolute;
+  transform: translateX(-8em) translateY(-5em) scale(.8);
+  z-index: 3;
+}
+
+@media screen and (min-width: 450px) {
+  .hero-text {
+    transform: translateX(-10em) translateY(5em) scale(.8);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero-text {
+    transform: translateX(-15em) translateY(12em) scale(.8);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .hero-text {
+    transform: translateX(-15em) translateY(12em) scale(.8);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-text {
+    transform: translateX(-20em) translateY(12em) scale(.8);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .hero-text {
+    transform: translateX(-25em) translateY(18em) scale(1);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero-text {
+    transform: translateX(-30em) translateY(18em);
+  }
 }
 
 .hero-text-line-1 {
-    overflow: visible;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-family: 'Gopher-Bold';
-    letter-spacing: .4rem;
-    width: 6.5rem;
-    height: 30rem;
-    position: relative;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .4rem;
+  width: 6.5rem;
+  height: 30rem;
+  position: absolute;
+  margin-top: -2rem;
+  margin-left: -3rem;
 }
 
 .hero-text-line-2 {
-    overflow: visible;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-family: 'Gopher-Bold';
-    letter-spacing: .4rem;
-    width: 6.5rem;
-    height: 30rem;
-    position: relative;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .4rem;
+  width: 6.5rem;
+  height: 30rem;
+  position: relative;
 }
 
 /* Bottle Showcase */
 
 .bottle-showcase {
- position: relative;
+  position: relative;
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 6450px) {
+  .bottle-showcase {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bottle-showcase {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .bottle-showcase {
+    min-height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bottle-showcase {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .bottle-showcase {
+    min-height: 130vh;
+  }
 }
 
 .bottles {
     z-index: 2;
     position: absolute;
-    top: -10em;
+    top: 0;
 }
 
 .bottles img {
     width: 100%;
 }
 
-.bottle-bg {
-    width: 80%;
-    height: 70vh;
-    background-image: url('assets/img/cairjn-multiple-bottle-bg-desktop.jpg');
+.bottle-bg-desktop {
+    width: 90%;
+    height: 40vh;
     background-size: cover;
     background-position: center;
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 4em;
+    margin: 0 5%;
+}
+
+@media screen and (min-width: 600px) {
+  .bottle-bg-desktop {
+    width: 80%;
+    height: 40vh;
+    top: 6em;
     margin: 0 10%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .bottle-bg-desktop {
+    height: 50vh;
+    top: 7em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bottle-bg-desktop {
+    height: 70vh;
+    top: 12em;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .bottle-bg-desktop {
+    height: 100vh;
+    top: 12em;
+  }
+}
+
+.bottle-bg-mobile {
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  top: 10em;
+  margin: 0;
+}
+
+.bs-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 450px) {
+  .bs-desktop {
+    display: block;
+  }
+}
+
+.bs-mobile {
+  display: block;
+}
+
+@media screen and (min-width: 450px) {
+  .bs-mobile {
+    display: none;
+  }
+}
+
+/* First About Block */
+
+.about-text {
+  position: absolute;
+  z-index: 3;
+  overflow: visible;
+  width: 6.5rem;
+  height: 30rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .4rem;
+  transform: translateX(3em) translateY(42em) scale(.8);
+}
+
+@media screen and (min-width: 450px) {
+  .about-text {
+    transform: translateX(-5em) translateY(35em) scale(.8);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-text {
+    transform: translateX(-10em) translateY(40em) scale(.8);
+  }
+}
+
+
+@media screen and (min-width: 1150px) {
+  .about-text {
+    transform: translateX(-10em) translateY(45em) scale(1);
+  }
+}
+
+.first-about-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first-about-block-content {
+  margin: 0;
+  position: relative;
+}
+
+@media screen and (min-width: 450px) {
+  .first-about-block-content {
+    margin: 0 0 0 10vw;
+  }
+}
+
+.first-about-block-p {
+  width: 100vw;
+  font-size: 1.1rem;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .1rem;
+  margin: 10vh 0;
+}
+
+@media screen and (min-width: 450px) {
+  .first-about-block-p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .first-about-block-p {
+    width: 30vw;
+  }
+}
+
+.first-about-block-p p {
+  margin: 0 1.5em;
+}
+
+@media screen and (min-width: 450px) {
+  .first-about-block-p p {
+    margin: 0;
+  }
+}
+
+.image-about-image-wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+
+@media screen and (min-width: 450px) {
+  .image-about-image-wrapper {
+    display: block;
+  }
+}
+
+.image-about-image-wrapper img {
+  width: 80vw;
+  z-index: 2;
+  right: 0;
+  position: relative;
+}
+
+@media screen and (min-width: 450px) {
+  .image-about-image-wrapper img {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .image-about-image-wrapper img {
+    width: 30vw;
+  }
+}
+
+.coloured-box-2 {
+  background-size: cover;
+  width: 70vw;
+  height: 70vw;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-10em);
+  right: 0;
+}
+
+@media screen and (min-width: 450px) {
+  .coloured-box-2 {
+    width: 45vw;
+    height: 40vw;
+    z-index: -1;
+    transform: translateX(5em) translateY(-12em);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .coloured-box-2 {
+    width: 45vw;
+    height: 40vw;
+    transform: translateX(5em) translateY(-18em);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .coloured-box-2 {
+    width: 45vw;
+    height: 40vw;
+    transform: translateX(5em) translateY(-22em);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .coloured-box-2 {
+    width: 35vw;
+    height: 30vw;
+  }
+}
+
+/* Second About Block */
+
+.second-about-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10em;
+  }
+
+
+.second-about-block p {
+  font-size: 1.1rem;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .1rem;
+  margin: 2em 1.5em;
+}
+
+@media screen and (min-width: 700px) {
+  .second-about-block p {
+    width: 40vw;
+    transform: translateX(-10em);
+    margin: 2em 0;
+  }
+}
+
+/* Footer */
+
+.contact-us {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5em;
+}
+
+.contact-us-text {
+  z-index: 3;
+  overflow: visible;
+  width: 6.5rem;
+  height: 30rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .4rem;
+}
+
+input[type="text"] {
+  display: block;
+  width: 25em;
+  padding: 1em;
+  border: none;
+  background: #EDEDED;
+}
+
+input[type="submit"] {
+  min-width: 6em;
+  padding: .4em;
+  border: none;
+  background-color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  text-transform: uppercase;
+  color: #DEDAD3;
+  border-radius: 1em;
+  display: block;
+  margin: 1em auto;
+  transition: all 2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #A7988C;
+  transition: all 2s;
+}
+
+.input-container {
+  display: block;
+  margin-bottom: 5em;
+  transform: translateY(-10em);
+}
+
+.social-buttons {
+  display: block;
+}
+
+.social-buttons svg {
+  width: 2em;
+  height: 2em;
+  display: block;
+  margin: 3em auto;
+  fill: #000000;
+  transition: all 2s;
+}
+
+.social-buttons svg:hover {
+  fill: #A7988C;
+  transition: all 2s;
+}
+
+.footer-logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cairjn-footer-logo img {
+  width: 10em;
+  margin: 4em 0;
+}
+
+.footer-copyright {
+  font-size: .7rem;
+  font-family: 'Gopher-Bold';
+  letter-spacing: .1rem;
+  margin-bottom: 1em;
 }
