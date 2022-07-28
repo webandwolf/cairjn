@@ -1,16 +1,40 @@
 /* -------------------
-Font(s)
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at https://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2022 Fontspring
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Adam Ladd
+ * License URL: https://www.fontspring.com/licenses/adam-ladd/webfont
 ---------------------- */
 
 @font-face {
   font-family: 'Gopher-Bold';
-  font-style: normal;
+  font-style: bold;
   font-weight: 600;
   font-display: swap;
   unicode-range: U+000-5FF;
-  src: url('../../assets/fonts/gopher-bold.woff2') format('woff2'),
-     url('../../assets/fonts/gopher-bold.woff') format('woff'),
-     url('../../assets/fonts/gopher-bold.ttf') format('truetype');
+  src: url('../../assets/fonts/gopher-bold-webfont.woff2') format('woff2'),
+       url('../../assets/fonts/gopher-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gopher-Medium';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: url('../../assets/fonts/gopher-medium-webfont.woff2') format('woff2'),
+       url('../../assets/fonts/gopher-medium-webfont.woff') format('woff');
 }
 
 /* -------------------
