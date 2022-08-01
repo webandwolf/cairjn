@@ -170,7 +170,7 @@ html {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: 'Gopher-Bold';
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   width: 3.5rem;
   height: 3rem;
   margin: 18em 0 0 1em;
@@ -195,7 +195,7 @@ html {
 
 .left-hero p {
   margin: 0;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
 
 svg {
@@ -545,8 +545,8 @@ svg {
 .first-about-block-p {
   width: 100vw;
   font-size: 1.1rem;
-  font-family: 'Gopher-Bold';
-  letter-spacing: .1rem;
+  font-family: 'Gopher-Medium';
+  letter-spacing: 0.1rem;
   margin: 10vh 0;
 }
 
@@ -660,7 +660,7 @@ svg {
 .second-about-block p {
   font-size: 1.1rem;
   font-family: 'Gopher-Bold';
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   margin: 2em 1.5em;
 }
 
@@ -765,6 +765,6 @@ input[type="submit"]:hover {
 .footer-copyright {
   font-size: .7rem;
   font-family: 'Gopher-Bold';
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   margin-bottom: 1em;
 }
