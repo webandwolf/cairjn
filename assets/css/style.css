@@ -659,7 +659,7 @@ svg {
 
 .second-about-block p {
   font-size: 1.1rem;
-  font-family: 'Gopher-Bold';
+  font-family: 'Gopher-Medium';
   letter-spacing: 0.1rem;
   margin: 2em 1.5em;
 }
@@ -764,7 +764,7 @@ input[type="submit"]:hover {
 
 .footer-copyright {
   font-size: .7rem;
-  font-family: 'Gopher-Bold';
+  font-family: 'Gopher-Medium';
   letter-spacing: 0.1rem;
-  margin-bottom: 1em;
+  margin-bottom: 2rem;
 }
