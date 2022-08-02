@@ -878,10 +878,6 @@ input[type="text"], input[type="email"] {
   margin-top: 1em;
 }
 
-input[type="radio"] + label {
-  display: inline-block;
-}
-
 input[type="submit"] {
   cursor: pointer;
   min-width: 6em;
