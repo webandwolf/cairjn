@@ -746,6 +746,7 @@ svg {
 /* General Forms */
 
 :root {
+  --space-unit: 1rem;
   --space-xxxs: calc(0.375 * var(--space-unit));
   --checkbox-radio-size: 18px;
   --checkbox-radio-gap: var(--space-xxxs);
