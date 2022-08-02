@@ -748,6 +748,14 @@ input[type="text"], input[type="email"] {
   background: #EDEDED;
 }
 
+.input-group > ul {
+  margin-top: 1em;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+}
+
 input[type="submit"] {
   min-width: 6em;
   padding: 0.4em 1em;
