@@ -128,6 +128,13 @@ html {
   display: none;
 }
 
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: 0.15rem;
+}
+
 p {
   line-height: 1.45em;
   letter-spacing: 0.05em;
