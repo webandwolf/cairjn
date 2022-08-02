@@ -847,7 +847,7 @@ svg {
 .checkbox:checked:active + label::before,
 .radio:focus + label::before,
 .checkbox:focus + label::before {
-  border-color: #cbb7a6;
+  border-color: var(--color-primary);
   box-shadow: 0 0 0 3px hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
 }
 
