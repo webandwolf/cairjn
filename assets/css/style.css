@@ -735,6 +735,9 @@ svg {
 .mc-field-group label {
   display: block;
   margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  font-family: 'Gopher-Medium';
+  letter-spacing: 0.15rem;
 }
 
 input[type="text"], input[type="email"] {
