@@ -755,6 +755,10 @@ svg {
   --checkbox-radius: 4px;
 }
 
+:focus-visible, :focus {
+  outline-color: #baa7a2;
+}
+
 .radio,
 .checkbox {
   position: absolute;
