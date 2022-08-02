@@ -132,6 +132,13 @@ html {
   text-align: center;
 }
 
+.italic {
+  text-transform: uppercase;
+  font-family: 'Gopher-Bold';
+  letter-spacing: 0.15rem;
+  color:
+}
+
 h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -566,7 +573,6 @@ svg {
   font-size: 1.1rem;
   width: 100vw;
   font-family: 'Gopher-Medium';
-  letter-spacing: 0.1rem;
   margin: 10vh 0;
 }
 
@@ -680,7 +686,6 @@ svg {
 .second-about-block p {
   font-size: 1.1rem;
   font-family: 'Gopher-Medium';
-  letter-spacing: 0.1rem;
   margin: 2em 1.5em;
 }
 
@@ -717,6 +722,15 @@ svg {
 
 #mc_embed_signup {
   margin-top: 2rem;
+}
+
+.mc-field-group {
+  margin: 1em 0;
+}
+
+.mc-field-group label {
+  display: block;
+  margin: 0 0 0.5em 0;
 }
 
 input[type="text"], input[type="email"] {
