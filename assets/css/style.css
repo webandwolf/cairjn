@@ -730,6 +730,7 @@ svg {
 
 .mc-field-group {
   margin: 0 0 2em 0;
+  letter-spacing: 0.1em;
 }
 
 .mc-field-group label {
