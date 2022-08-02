@@ -815,9 +815,9 @@ svg {
 
 .radio:checked + label::before,
 .checkbox:checked + label::before {
-  background-color: var(--color-primary);
+  background-color: #ededed;
   box-shadow: none;
-  border-color: var(--color-primary);
+  border-color: #000;
   transition: transform 0.2s;
 }
 
@@ -847,8 +847,8 @@ svg {
 .checkbox:checked:active + label::before,
 .radio:focus + label::before,
 .checkbox:focus + label::before {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
+  border-color: #cbb7a6;
+  box-shadow: 0 0 0 3px #e4d0c6 0.2);
 }
 
 .radio--bg + label, .checkbox--bg + label {
