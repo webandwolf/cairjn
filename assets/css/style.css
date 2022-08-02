@@ -129,7 +129,6 @@ html {
 }
 
 p {
-  font-size: 1.1rem;
   line-height: 1.375em;
   letter-spacing: 0.05em;
   widows: 3;
@@ -553,6 +552,7 @@ svg {
 }
 
 .first-about-block-p {
+  font-size: 1.1rem;
   width: 100vw;
   font-family: 'Gopher-Medium';
   letter-spacing: 0.1rem;
@@ -667,6 +667,7 @@ svg {
 
 
 .second-about-block p {
+  font-size: 1.1rem;
   font-family: 'Gopher-Medium';
   letter-spacing: 0.1rem;
   margin: 2em 1.5em;
