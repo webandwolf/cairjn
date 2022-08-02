@@ -132,11 +132,15 @@ html {
   text-align: center;
 }
 
-.italic {
+strong, b {
+  font-family: 'Gopher-Bold';
+}
+
+.italic, em, i {
   text-transform: uppercase;
   font-family: 'Gopher-Bold';
   letter-spacing: 0.15rem;
-  color:
+  color: #baa7a2;
 }
 
 h2 {
