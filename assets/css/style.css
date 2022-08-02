@@ -128,6 +128,10 @@ html {
   display: none;
 }
 
+.center {
+  text-align: center;
+}
+
 h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -688,7 +692,7 @@ svg {
   }
 }
 
-/* Footer */
+/* Contact and Other Forms */
 
 .contact-us {
   position: relative;
@@ -711,7 +715,11 @@ svg {
   letter-spacing: .4rem;
 }
 
-input[type="text"] {
+#mc_embed_signup {
+  margin-top: 2rem;
+}
+
+input[type="text"], input[type="email"] {
   display: block;
   width: 25em;
   padding: 1em;
@@ -746,6 +754,8 @@ input[type="submit"]:hover {
   margin-bottom: 5em;
   transform: translateY(-10em);
 }
+
+/* Footer */
 
 .social-buttons {
   display: block;
