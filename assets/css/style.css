@@ -874,6 +874,11 @@ input[type="text"], input[type="email"] {
   padding: 1em;
   border: none;
   background: #EDEDED;
+  letter-spacing: 0.05em;
+}
+
+input:-internal-autofill-selected {
+  background-color: -internal-light-dark(rgb(226, 208, 190), rgba(70, 90, 126, 0.4)) !important;
 }
 
 .input-group > ul {
