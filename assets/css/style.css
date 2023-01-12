@@ -159,6 +159,41 @@ p {
   orphans: 3;
 }
 
+a {
+  text-decoration: none;
+}
+
+.shop-now-button {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+button {
+  cursor: pointer;
+    min-width: 6em;
+    padding: 0.4em 1em;
+    border: 3px solid #000;
+    background-color: #DEDAD3;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Gopher-Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #000;
+    border-radius: 2em;
+    display: block;
+    transition: all 2s;
+    margin: .5em auto;
+}
+
+button:hover {
+  background-color: #A7988C;
+  border-color: #A7988C;
+  color: #DEDAD3;
+}
+
 .hero {
   position: relative;
   min-height: 100vh;
