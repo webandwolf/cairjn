@@ -164,7 +164,7 @@ a {
 }
 
 .shop-now-button {
-  z-index: 2;
+  z-index: 5;
   position: sticky;
   width: 100%;
   top: 1em;
